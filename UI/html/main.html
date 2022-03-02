@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <a class="logo">Exchange</a>
+        <div class="my-profile">
+          <div class="my-name">Vladimir</div>
+          <span>|</span>
+          <button class="logout">Выйти</button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="filt">
+        <article class="arcticle-filters">
+          <h3>Фильтры</h3>
+          <div class="filters-line"></div>
+          <table class="filters">
+            <thead>
+              <tr>
+                <th></th>
+              </tr>
+            </thead>
+            <th class="p"></th>
+            <tbody>
+              <tr>
+                <td>По имени автора</td>
+                <td>
+                  <input
+                    placeholder="Коля Карпов"
+                    maxlength="280"
+                    type="text"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>По дате и времени</td>
+                <td><input type="date" /></td>
+              </tr>
+              <tr>
+                <td class="text-of-twit"><span> По тексту твита</span></td>
+                <td>
+                  <textarea
+                    maxlength="280"
+                    placeholder="Пожар в Австралии"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-of-twit">По хэштегам</td>
+                <td>
+                  <textarea
+                    class="hashtags"
+                    maxlength="280"
+                    placeholder="#weather #trees"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+
+      <section class="twits">
+        <article class="mine-twit">
+          <textarea
+            placeholder="Добавьте свой твит..."
+            class="my-twit"
+            cols="30"
+            maxlength="280"
+            rows="10"
+          ></textarea>
+          <button class="send-button">
+            <img src="../icons/bi_send.svg" alt="" />
+          </button>
+        </article>
+
+        <div class="all-twits">
+          <article class="someones-twits">
+            <div class="name">
+              <p>Vladimir (you) | Feb 15, <span>15:34</span></p>
+            </div>
+            <div class="twits-line"></div>
+            <p class="twit-text">#weather #vulcan</p>
+            <div class="twits-line"></div>
+            <a class="answers" href="#">Answers 8</a>
+            <div class="twits-buttons">
+              <button class="edit-twit">Edit</button>
+              <button class="delete-twit">Delete</button>
+            </div>
+          </article>
+          <article class="someones-twits">
+            <div class="name">
+              <p>Sasha | Feb 15, <span>19:08</span></p>
+            </div>
+            <div class="twits-line"></div>
+            <p class="twit-text">#weather #vulcan</p>
+            <div class="twits-line"></div>
+            <a class="answers" href="#">Answers 8</a>
+            <div class="twits-buttons"></div>
+          </article>
+          <article class="someones-twits">
+            <div class="name">
+              <p>Masha | Feb 16, <span>18:51</span></p>
+            </div>
+            <div class="twits-line"></div>
+            <p class="twit-text">#weather #vulcan</p>
+            <div class="twits-line"></div>
+            <a class="answers" href="#">Answers 8</a>
+            <div class="twits-buttons"></div>
+          </article>
+          <article class="someones-twits">
+            <div class="name">
+              <p>Sveta | Feb 17, <span>15:33</span></p>
+            </div>
+            <div class="twits-line"></div>
+            <p class="twit-text">#weather #vulcan</p>
+            <div class="twits-line"></div>
+            <a class="answers" href="#">Answers 8</a>
+            <div class="twits-buttons"></div>
+          </article>
+          <article class="someones-twits">
+            <div class="name">
+              <p>Tolik | Feb 17, <span>11:12</span></p>
+            </div>
+            <div class="twits-line"></div>
+            <p class="twit-text">#weather #vulcan</p>
+            <div class="twits-line"></div>
+            <a class="answers" href="#">Answers 8</a>
+            <div class="twits-buttons"></div>
+          </article>
+          <article class="someones-twits">
+            <div class="name">
+              <p>Artem | Feb 17, <span>19:08</span></p>
+            </div>
+            <div class="twits-line"></div>
+            <p class="twit-text">#weather #vulcan</p>
+            <div class="twits-line"></div>
+            <a class="answers" href="#">Answers 8</a>
+            <div class="twits-buttons"></div>
+          </article>
+          <article class="someones-twits">
+            <div class="name">
+              <p>Gleb | Feb 18, <span>05:24</span></p>
+            </div>
+            <div class="twits-line"></div>
+            <p class="twit-text">#weather #vulcan</p>
+            <div class="twits-line"></div>
+            <a class="answers" href="#">Answers 8</a>
+            <div class="twits-buttons"></div>
+          </article>
+          <article class="someones-twits">
+            <div class="name">
+              <p>Kostya | Feb 19, <span>16:04</span></p>
+            </div>
+            <div class="twits-line"></div>
+            <p class="twit-text">#weather #vulcan</p>
+            <div class="twits-line"></div>
+            <a class="answers" href="#">Answers 8</a>
+            <div class="twits-buttons"></div>
+          </article>
+          <article class="someones-twits">
+            <div class="name">
+              <p>Sergey | Feb 19, <span>12:15</span></p>
+            </div>
+            <div class="twits-line"></div>
+            <p class="twit-text">#weather #vulcan</p>
+            <div class="twits-line"></div>
+            <a class="answers" href="#">Answers 8</a>
+            <div class="twits-buttons"></div>
+          </article>
+          <article class="someones-twits">
+            <div class="name">
+              <p>Kolya | Feb 23, <span>17:34</span></p>
+            </div>
+            <div class="twits-line"></div>
+            <p class="twit-text">#weather #vulcan</p>
+            <div class="twits-line"></div>
+            <a class="answers" href="#">Answers 8</a>
+            <div class="twits-buttons"></div>
+          </article>
+        </div>
+        <button class="load-more">Load more</button>
+      </section>
+      .
+    </main>
+    <footer class="footer">
+      <a class="logo-footer">Exchange</a>
+      <span>Vladimir Usatov</span>
+      <span>vovausatov95@gmail.com</span>
+      <span>20.02.2022</span>
+    </footer>
+  </body>
+</html>
