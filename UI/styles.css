@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+html {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  /* overflow: hidden; */
+}
+
+:root {
+  --main-color: #00c684;
+  --secondary-color: #2dffb9;
+  --white-color: #fff;
+  --black-clor: #000;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+}
+input {
+  outline: none;
+}
+/* HEADER */
+
+header {
+  position: fixed;
+  z-index: 2;
+  background-color: var(--white-color);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 52px;
+  box-shadow: 0 6px 4px -3px rgba(0, 0, 0, 0.3);
+}
+
+.header-content {
+  max-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.my-profile {
+  width: 170px;
+  display: flex;
+  margin-right: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.my-profile-2 {
+  width: 250px;
+  display: flex;
+  margin-right: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 50px;
+  font-family: 'Alfa Slab One', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: var(--main-color);
+}
+
+.my-name {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.logout {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: normal;
+  background: var(--white-color);
+  border: 2px solid #00c684;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+/*MAIN CONTENT*/
+
+.main {
+  padding-top: 50px;
+  display: flex;
+}
+.main-2 {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.twits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.twits-2 {
+  display: flex;
+  flex-direction: column;
+}
+.filters {
+  width: 420px;
+  padding-left: 10px;
+}
+
+.filt {
+  padding: 35px;
+}
+
+table {
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.text-of-twit {
+  position: absolute;
+}
+
+.filters-line {
+  height: 1px;
+  color: var(--black-clor);
+}
+
+.arcticle-filters {
+  border: 1px solid black;
+  width: 420px;
+  border-radius: 20px;
+}
+
+.filters-line {
+  height: 1px;
+  background-color: var(--black-clor);
+}
+
+.arcticle-filters h3 {
+  margin-left: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+tbody > tr > td:first-child {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.hashtags::placeholder {
+  color: var(--main-color);
+}
+
+.hashtags {
+  color: var(--main-color);
+}
+
+.my-twit {
+  width: 720px;
+  height: 121px;
+  margin: 5px 0px 5px 10px;
+  border: none;
+}
+
+.my-twit::placeholder {
+  padding-top: 5px;
+}
+
+.twits .mine-twit {
+  display: flex;
+  border-radius: 20px;
+  height: 135px;
+  margin-left: 25px;
+  width: 760px;
+  width: 8;
+  margin-top: 35px;
+  border: 2px solid black;
+}
+
+.go-home {
+  text-decoration: none;
+  color: var(--main-color);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.mine-twit-2 {
+  display: flex;
+  border-radius: 20px;
+  height: 135px;
+  background-color: var(--white-color);
+  width: 760px;
+  margin-top: 35px;
+  border: 2px solid black;
+  position: sticky;
+  bottom: 0;
+}
+.someones-twits {
+  border-radius: 20px;
+  padding: 10px;
+  height: auto;
+  margin-left: 50px;
+  width: 740px;
+  margin-top: 28px;
+  width: 8;
+  border: 1px solid black;
+}
+.someones-twits-2 {
+  border-radius: 20px;
+  padding: 10px;
+  height: auto;
+  width: 740px;
+  margin-top: 28px;
+  width: 8;
+  border: 1px solid black;
+}
+
+.all-twits {
+  padding-right: 20px;
+  display: block;
+  height: calc(100vh - 226px);
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.all-twits::-webkit-scrollbar {
+  height: 362px;
+  background-color: #c4c4c4;
+  border-radius: 5px;
+  width: 5px;
+}
+
+.all-twits::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #c4c4c4;
+}
+
+.all-twits::-webkit-scrollbar-track {
+  background-color: #dee2e6;
+}
+
+.twits > article > textarea {
+  margin: 5px 0px 5px 10px;
+  border: none;
+}
+
+.twits-line {
+  margin-bottom: 10px;
+  height: 1px;
+  width: 193px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.send-button {
+  border: none;
+  background-color: var(--white-color);
+  height: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.twit-text {
+  width: 720px;
+  height: 121px;
+  color: var(--black-clor);
+}
+
+.name > p > span {
+  color: var(--main-color);
+}
+
+.answers {
+  text-decoration: none;
+  color: var(--black-clor);
+}
+.answers-of-twit {
+  margin: 20px 0 20px 0;
+  text-decoration: none;
+  color: var(--black-clor);
+}
+.twits-buttons {
+  display: flex;
+  justify-content: end;
+}
+
+.edit-twit {
+  margin-right: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: var(--white-color);
+  cursor: pointer;
+  width: 94px;
+  height: 28px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: var(--main-color);
+}
+
+.delete-twit {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  width: 94px;
+  height: 28px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #de4c4c;
+  cursor: pointer;
+}
+
+.load-more {
+  background: #ffffff;
+  border: 2px solid #00c684;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 140px;
+  height: 33px;
+  cursor: pointer;
+  margin: 25px 0px 25px 0px;
+}
+
+/* Footer */
+
+.footer {
+  box-shadow: 0 -6px 6px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  padding: 20px 0 20px 0px;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.logo-footer {
+  font-family: 'Alfa Slab One', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: var(--main-color);
+}
+
+.footer span {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media (max-width: 400px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-2 {
+    flex-direction: column;
+  }
+  header {
+    width: 400px;
+  }
+  .twits-2 {
+    align-items: center;
+  }
+  .twit-text {
+    width: 380px;
+  }
+  .filt {
+    padding: 0;
+  }
+  .filters {
+    width: 365px;
+  }
+  .arcticle-filters {
+    width: 380px;
+    margin: 12px;
+  }
+  .twits .mine-twit {
+    width: 350px;
+    margin-left: 0;
+  }
+  textarea {
+    width: 200px;
+  }
+  .all-twits {
+    overflow-x: hidden;
+    padding-right: 0;
+  }
+  .someones-twits {
+    width: 330px;
+    margin-left: 0;
+  }
+  .someones-twits-2 {
+    width: 360px;
+  }
+  .mine-twit-2 {
+    width: 380px;
+  }
+  .my-profile-2 {
+    margin-right: 5px;
+  }
+  .logo {
+    margin-left: 2px;
+  }
+}
