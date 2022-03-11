@@ -110,24 +110,14 @@ header {
 .filters {
   width: 420px;
   padding-left: 10px;
+  display: flex;
 }
 
+.name-filter {
+  margin-bottom: 20px;
+}
 .filt {
   padding: 35px;
-}
-
-table {
-  border-radius: 20px;
-  box-sizing: border-box;
-}
-
-.text-of-twit {
-  position: absolute;
-}
-
-.filters-line {
-  height: 1px;
-  color: var(--black-clor);
 }
 
 .arcticle-filters {
@@ -136,24 +126,12 @@ table {
   border-radius: 20px;
 }
 
-.filters-line {
-  height: 1px;
-  background-color: var(--black-clor);
-}
-
 .arcticle-filters h3 {
   margin-left: 10px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
-}
-
-tbody > tr > td:first-child {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
 }
 
 .hashtags::placeholder {
@@ -264,10 +242,14 @@ tbody > tr > td:first-child {
 
 .send-button {
   border: none;
+  background-image: url(icons/bi_send.svg);
   background-color: var(--white-color);
-  height: 50px;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
   margin: 10px;
   cursor: pointer;
+  margin: 10px;
 }
 
 .twit-text {

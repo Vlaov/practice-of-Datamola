@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles.css" />
-    <title>Document</title>
+    <title>Главная</title>
   </head>
   <body>
     <header>
@@ -20,57 +20,45 @@
     </header>
     <main class="main">
       <section class="filt">
-        <article class="arcticle-filters">
+        <div class="arcticle-filters">
           <h3>Фильтры</h3>
-          <div class="filters-line"></div>
-          <table class="filters">
-            <thead>
-              <tr>
-                <th></th>
-              </tr>
-            </thead>
-            <th class="p"></th>
-            <tbody>
-              <tr>
-                <td>По имени автора</td>
-                <td>
-                  <input
-                    placeholder="Коля Карпов"
-                    maxlength="280"
-                    type="text"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>По дате и времени</td>
-                <td><input type="date" /></td>
-              </tr>
-              <tr>
-                <td class="text-of-twit"><span> По тексту твита</span></td>
-                <td>
-                  <textarea
-                    maxlength="280"
-                    placeholder="Пожар в Австралии"
-                    cols="30"
-                    rows="10"
-                  ></textarea>
-                </td>
-              </tr>
-              <tr>
-                <td class="text-of-twit">По хэштегам</td>
-                <td>
-                  <textarea
-                    class="hashtags"
-                    maxlength="280"
-                    placeholder="#weather #trees"
-                    cols="30"
-                    rows="10"
-                  ></textarea>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </article>
+          <hr class="filters-line"></hr>
+            <div class="filters">
+                <div class="inputs-of-filters">
+                  <div class="name-filter">
+                    <div>По имени автора</div>
+                      <input
+                        placeholder="Коля Карпов"
+                        maxlength="280"
+                        type="text"
+                      />
+                  </div>
+                  <div class="name-filter">
+                    <div>По дате и времени</div>
+                    <input type="date" />
+                  </div>
+                  <div class="name-filter">
+                    <div class="text-of-twit"><span> По тексту твита</span></div>
+                      <textarea
+                        maxlength="280"
+                        placeholder="Пожар в Австралии"
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                  </div>
+                  <div class="name-filter">
+                    <div class="text-of-twi">По хэштегам</div>
+                      <textarea
+                        class="hashtags"
+                        maxlength="280"
+                        placeholder="#weather #trees"
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                  </div>
+                </div>
+            </div>
+        </div>
       </section>
 
       <section class="twits">
@@ -82,9 +70,7 @@
             maxlength="280"
             rows="10"
           ></textarea>
-          <button class="send-button">
-            <img src="../icons/bi_send.svg" alt="" />
-          </button>
+          <button class="send-button"></button>
         </article>
 
         <div class="all-twits">
