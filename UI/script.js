@@ -299,7 +299,7 @@ const myModule = (function () {
   }
 
   function sortid(id) {
-    byDate.forEach((item) => {
+    tweets.forEach((item) => {
       if (id == item.id) {
         return item;
       }
@@ -308,14 +308,30 @@ const myModule = (function () {
 
   ////////////////// Почему то sortid возвращает undefined
 
-  function validateTweet() {
+  function removeTweet(id) {
+    const index = tweets.findIndex((n) => n.id == id);
+    if (index !== -1) {
+      tweets.splice(index, 1);
+    } else {
+      return false;
+    }
+  }
+
+  function validateTweet(tw) {
     if (
-      'id' in tweet &&
-      'text' in tweet &&
-      'createdAt' in tweet &&
-      'author' in tweet &&
-      'comments' in tweet
+      'id' in tw &&
+      'text' in tw &&
+      'createdAt' in tw &&
+      'author' in tw &&
+      'comments' in tw
     ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  function validateComment(com) {
+    if ('id' in com && 'text' in com && 'createdAt' in com && 'author' in com) {
       return true;
     } else {
       return false;
@@ -338,11 +354,19 @@ const myModule = (function () {
       return false;
     }
   }
+  function addComment(id, text) {
+    if (validateComment() === true || id == tweet.id) {
+      tweet.comments.push(text);
+    }
+  }
   function editTweet() {
     if (user === tweet.author) {
     } else {
       return false;
     }
+  }
+  function changeUser(usr) {
+    return user.replace(user, usr);
   }
 
   return {
@@ -355,9 +379,9 @@ const myModule = (function () {
     sortTwit,
     sortIdentificator,
     sortid,
+    removeTweet,
+    validateComment,
+    addComment,
+    changeUser,
   };
 })();
-// myModule.sortid('4');
-// console.log(myModule.sortIdentificator);
-console.log(myModule.sortid('4'));
-// console.log(myModule.sortIdentificator);
