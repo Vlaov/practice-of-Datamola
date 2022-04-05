@@ -254,7 +254,7 @@ const myModule = (function () {
     },
   ];
 
-  const user = 'Sasha';
+  const user = 'Vova';
   const byDate = tweets.slice(0);
   let sortTwit = [];
   let sortIdentificator = [];
